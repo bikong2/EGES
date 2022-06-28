@@ -1,7 +1,10 @@
 
 import pandas as pd
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+tf.disable_eager_execution()
 import time
 import argparse
 from EGES_model import EGES_Model

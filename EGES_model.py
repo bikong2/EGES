@@ -1,7 +1,9 @@
 
 import numpy as np
-import tensorflow as tf
-
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+tf.disable_eager_execution()
 
 class EGES_Model:
     def __init__(self, num_nodes, num_feat, feature_lens, n_sampled=100, embedding_dim=128, lr=0.001):
